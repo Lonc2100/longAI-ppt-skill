@@ -1,0 +1,12 @@
+interface:
+  display_name: "Design Deck · 设计演示稿"
+  short_description: "按内容选风格，制作可离线编辑的 HTML 演示稿，支持文字可编辑的 PPTX 导出"
+  default_prompt: "使用 design-deck，将我的主题、文档或数据制作成 HTML 演示稿。先让我确认总页数及 ASCII 逐页主标题和全部必现文字，再找视觉参考并选主方向，形成 DESIGN.md 初稿，按规范搜集或生成素材。用实际素材制作代表页并对照参考，更新定版同一 DESIGN.md 后完成全稿与检查。已明确确认的内容直接复用。"
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets: ["generic", "agent-skills-compatible"]
+  validation_scope: "local scripts and browser; host auto-discovery not verified"
+  permissions:
+    file_write: "user-selected output directory; no overwrite of existing nonempty directories"
+    network: "not required; source retrieval only when authorized"
+    publishing: "never automatic"

@@ -1,0 +1,15 @@
+{
+  "note": "Keyword smoke only; not a model-backed routing evaluation.",
+  "positive_concepts": {"format":["HTML","网页 PPT","浏览器幻灯片"],"job":["演示稿","分享演讲","工作汇报","数据分析","幻灯片"],"action":["制作","修改","选风格","逐页修改","离线交付","做"]},
+  "description_required_concepts":["format","job","action"],"recommended_threshold":0.66,
+  "negative_patterns":["必须交付所有对象原生可编辑 .pptx","只提取","只写文章","单张海报","普通网页开发"],
+  "should_trigger":[
+    {"text":"把文档制作成 HTML 演示稿","family":"new-deck"},
+    {"text":"修改浏览器幻灯片第三页","family":"edit"},
+    {"text":"为 HTML 演示稿选风格","family":"style"},
+    {"text":"把数据分析做成网页 PPT","family":"data"},
+    {"text":"制作离线交付的工作汇报演示稿","family":"delivery"}
+  ],
+  "should_not_trigger":["只写文章，不要演示稿","做单张海报","普通网页开发：做登录页","只提取现有 PPT 内容"],
+  "near_neighbor":["制作工作汇报但必须交付所有对象原生可编辑 .pptx","HTML 页面运行有 bug，排查登录接口","分析这个 Skill 如何设计"]
+}

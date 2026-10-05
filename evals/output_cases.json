@@ -1,0 +1,11 @@
+{
+  "cases": [
+    {"id":"new-topic","input":"24 人读书会，五分钟介绍活动方案，HTML 六页","assertions":["模拟数据标注","四场发言人数与分母一致","流程 2+8+12+3=25","不声称因果","完整六页播放"]},
+    {"id":"style-transfer","input":"同一材料改为另外两种风格","assertions":["保留事实","构图随风格变化","不只更换背景色","复杂信息仍可读"]},
+    {"id":"changed-data","input":"第四场改为 16/24","assertions":["比率为 66.7%","图宽和正文同步","不得沿用 75.0%"]},
+    {"id":"long-title","input":"很长的中文标题与六行表格","assertions":["主动拆分或精简","不缩小到难读","实际渲染检查"]},
+    {"id":"no-assets","input":"无生图、无网络，仍需完整演示","assertions":["使用原创 SVG/排字/图表","无运行时网络请求"]},
+    {"id":"required-pptx","input":"必须 PowerPoint 中照片、图表和全部图形均原生可编辑","assertions":["明确当前格式不支持","不把 HTML 改扩展名"]}
+  ],
+  "execution_note":"Cases describe expected behavior, not automatic pass evidence. Reports identify actual checks and outstanding model/human trials."
+}

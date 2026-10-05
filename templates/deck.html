@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark"><title>{{TITLE}}</title>
+<link rel="stylesheet" href="base.css"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="custom.css">
+</head>
+<body data-theme="{{STYLE}}">
+<main id="viewport" aria-label="演示稿">
+<div id="stage">
+<!-- SLIDES:START -->
+<section class="slide hero" data-title="起步稿">
+  <div class="eyebrow">DESIGN DECK / 起步稿</div>
+  <h1>{{TITLE}}</h1>
+  <p class="subtitle">待填：本次演示要回答的核心问题。</p>
+  <aside class="speaker-notes">待填：讲述备注。请用用户材料替换起步稿。</aside>
+</section>
+<!-- SLIDES:END -->
+</div>
+<div class="toolbar" aria-label="播放控制">
+ <button id="prev" aria-label="上一步">←</button><span id="position" aria-live="polite"></span><button id="next" aria-label="下一步">→</button>
+ <span class="separator"></span><button id="auto" aria-pressed="false">播放</button>
+ <button id="overview" aria-expanded="false" aria-controls="menu">页目</button><button id="notes" aria-expanded="false" aria-controls="notes-panel">备注</button><button id="full">全屏</button>
+ <span id="step-label"></span>
+</div>
+<div id="menu" class="panel" role="dialog" aria-label="页面目录" hidden><button data-close>关闭</button><div id="page-list"></div></div>
+<div id="notes-panel" class="panel" role="dialog" aria-label="讲述备注" hidden><button data-close>关闭</button><p id="notes-text"></p></div>
+<p id="player-message" role="status" hidden></p>
+</main>
+<noscript>本演示需要浏览器允许本地 JavaScript；请完整保留交付文件夹。</noscript>
+<script src="player.js"></script>
+</body></html>

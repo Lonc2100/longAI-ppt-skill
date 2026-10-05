@@ -1,0 +1,138 @@
+{
+  "schema_version": "design-deck-ir-1.0",
+  "generated_at": "2026-10-03",
+  "package": {
+    "name": "design-deck",
+    "version": "0.1.0",
+    "owner": "user-owned",
+    "maturity_tier": "production",
+    "lifecycle_stage": null,
+    "upstream_inspiration": null,
+    "upstream_sync": {}
+  },
+  "intent": {
+    "description": "根据主题、文档或数据制作和修改有设计感的 HTML 演示稿、浏览器幻灯片、网页 PPT； 用于分享演讲、数据分析、工作汇报，支持选风格、DESIGN.md、逐页修改与离线交付。 用户只说“做 PPT”且格式未定时，先说明本技能产出 HTML 并确认格式需求。 不处理必须交付可编辑 .pptx、只提取现有 PPT 内容、普通网页开发、只写文章或设计单张海报。",
+    "job_to_be_done": "根据主题、文档或数据制作和修改有设计感的 HTML 演示稿、浏览器幻灯片、网页 PPT； 用于分享演讲、数据分析、工作汇报，支持选风格、DESIGN.md、逐页修改与离线交付。 用户只说“做 PPT”且格式未定时，先说明本技能产出 HTML 并确认格式需求。 不处理必须交付可编辑 .pptx、只提取现有 PPT 内容、普通网页开发、只写文章或设计单张海报。",
+    "target_users": [
+      "需要浏览器演示稿的分享者、分析人员和项目负责人"
+    ],
+    "inputs": [
+      "主题或文档",
+      "受众与用途",
+      "数据及来源（可选）",
+      "风格偏好（可选）"
+    ],
+    "outputs": [
+      "离线 HTML 演示稿",
+      "项目 DESIGN.md",
+      "逐页内容及来源",
+      "检查记录"
+    ],
+    "exclusions": [
+      "原生可编辑 PPTX",
+      "只提取内容",
+      "普通网页开发",
+      "自动发布"
+    ]
+  },
+  "triggers": {
+    "should_trigger": [
+      "把文档制作成 HTML 演示稿",
+      "修改浏览器幻灯片第三页",
+      "为 HTML 演示稿选风格",
+      "把数据分析做成网页 PPT",
+      "制作离线交付的工作汇报演示稿"
+    ],
+    "should_not_trigger": [
+      "只写文章，不要演示稿",
+      "做单张海报",
+      "普通网页开发：做登录页",
+      "只提取现有 PPT 内容"
+    ],
+    "near_neighbor": [
+      "制作工作汇报但必须交付可编辑 .pptx",
+      "HTML 页面运行有 bug，排查登录接口",
+      "分析这个 Skill 如何设计"
+    ]
+  },
+  "workflow": {
+    "steps": [
+      "用户提供主题、文档或数据",
+      "用户确认总页数",
+      "ASCII 展示逐页主标题、全部必现文字和不上屏备注",
+      "用户明确确认逐页内容",
+      "寻找 Refero DESIGN.md 与实际作品参考并选主方向",
+      "形成本次项目 DESIGN.md 初稿",
+      "Pinterest 找方向并回源获取素材，或免费图库、已有素材、必要生图",
+      "用实际素材制作代表页，与参考并排比较",
+      "更新并定版同一份 DESIGN.md",
+      "按规范完成全稿",
+      "核对已确认文字、视觉、播放与离线交付"
+    ],
+    "approval": "内容确认是视觉研究前的必须停点；复用已有明确确认，只对变动的页数、主标题或必现文字重新确认。笼统制作授权不等于采纳未展示的内容。",
+    "design_lifecycle": "主方向确定后建初稿；素材与代表页验证后更新定版；始终一份有效项目规范。"
+  },
+  "resources": {
+    "references": [
+      "references/authoring.md",
+      "references/content.md",
+      "references/design-contract.md",
+      "references/quality.md"
+    ],
+    "scripts": [
+      "scripts/build_examples.py",
+      "scripts/check_deck.py",
+      "scripts/init_deck.py",
+      "scripts/package_skill.py",
+      "scripts/test_contract.py",
+      "scripts/validate_skill.py",
+      "scripts/verify_browser.py"
+    ],
+    "evals": [
+      "evals/output_cases.json",
+      "evals/trigger_cases.json"
+    ],
+    "reports": [
+      "reports/browser-summary.json",
+      "reports/contract-tests.json",
+      "reports/creation-handoff.md",
+      "reports/gallery-checks.json",
+      "reports/package-static.json",
+      "reports/portability-checks.json",
+      "reports/prior-art-research.md",
+      "reports/skill-ir.json",
+      "reports/trigger-eval.json"
+    ]
+  },
+  "portability": {
+    "canonical_format": "agent-skills",
+    "adapter_targets": [
+      "generic",
+      "agent-skills-compatible"
+    ],
+    "activation": {},
+    "execution": {},
+    "trust": {},
+    "permissions": {
+      "file_write": "user-selected output directory; no overwrite of existing nonempty directories",
+      "network": "not required; source retrieval only when authorized",
+      "publishing": "never automatic"
+    },
+    "degradation": {}
+  },
+  "gates": {},
+  "evidence_boundary": {
+    "generated_reports_are_evidence": true,
+    "planned_work_is_evidence": false,
+    "missing_external_or_human_evidence_label": "missing evidence",
+    "public_claim_policy": "claim only what local validation, install proof, human review, or provider-backed evidence actually supports"
+  },
+  "evidence_limits": [
+    "keyword smoke only",
+    "local Chromium only",
+    "no independent user/model trial",
+    "Local workflow revision after 0.1.0; existing ZIP unchanged, revised flow not model-tested"
+  ],
+  "historical_snapshot": true,
+  "snapshot_note": "Historical 0.1.0 evidence; current entrypoint and manifest are authoritative."
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+qa/
+.env
+.env.*
+!.env.example
+editor-session.json
+index.before-edit-*.html
+.index-*.tmp
+.vscode/
+.idea/
+.DS_Store

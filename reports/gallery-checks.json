@@ -1,0 +1,27 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "12-preview-images-loaded",
+      "ok": true
+    },
+    {
+      "name": "select-playful",
+      "ok": true
+    },
+    {
+      "name": "select-commerce-intelligence",
+      "ok": true
+    },
+    {
+      "name": "select-project-journal",
+      "ok": true
+    },
+    {
+      "name": "gallery-mobile-no-overflow",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "scope": "local Chromium offline; selection fallback is allowed when clipboard is denied"
+}

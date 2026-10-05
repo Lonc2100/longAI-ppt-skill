@@ -1,0 +1,178 @@
+{
+  "ok": true,
+  "threshold": 0.66,
+  "description_concepts": [
+    "action",
+    "format",
+    "job"
+  ],
+  "missing_description_concepts": [],
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "false_positive": 0,
+    "false_negative": 0,
+    "pass_rate": 1.0
+  },
+  "failures": [],
+  "results": {
+    "should_trigger": [
+      {
+        "prompt": "把文档制作成 HTML 演示稿",
+        "family": "new-deck",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "action",
+          "format",
+          "job"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "修改浏览器幻灯片第三页",
+        "family": "edit",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "action",
+          "format",
+          "job"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "为 HTML 演示稿选风格",
+        "family": "style",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "action",
+          "format",
+          "job"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "把数据分析做成网页 PPT",
+        "family": "data",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 1.0,
+        "matched_concepts": [
+          "action",
+          "format",
+          "job"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "制作离线交付的工作汇报演示稿",
+        "family": "delivery",
+        "expected_trigger": true,
+        "predicted_trigger": true,
+        "passed": true,
+        "score": 0.667,
+        "matched_concepts": [
+          "action",
+          "job"
+        ],
+        "negative_pattern": null
+      }
+    ],
+    "should_not_trigger": [
+      {
+        "prompt": "只写文章，不要演示稿",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.333,
+        "matched_concepts": [
+          "job"
+        ],
+        "negative_pattern": "只写文章"
+      },
+      {
+        "prompt": "做单张海报",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.333,
+        "matched_concepts": [
+          "action"
+        ],
+        "negative_pattern": "单张海报"
+      },
+      {
+        "prompt": "普通网页开发：做登录页",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.333,
+        "matched_concepts": [
+          "action"
+        ],
+        "negative_pattern": "普通网页开发"
+      },
+      {
+        "prompt": "只提取现有 PPT 内容",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": "只提取"
+      }
+    ],
+    "near_neighbor": [
+      {
+        "prompt": "制作工作汇报但必须交付可编辑 .pptx",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.667,
+        "matched_concepts": [
+          "action",
+          "job"
+        ],
+        "negative_pattern": "必须交付可编辑 .pptx"
+      },
+      {
+        "prompt": "HTML 页面运行有 bug，排查登录接口",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.333,
+        "matched_concepts": [
+          "format"
+        ],
+        "negative_pattern": null
+      },
+      {
+        "prompt": "分析这个 Skill 如何设计",
+        "family": "default",
+        "expected_trigger": false,
+        "predicted_trigger": false,
+        "passed": true,
+        "score": 0.0,
+        "matched_concepts": [],
+        "negative_pattern": null
+      }
+    ]
+  },
+  "historical_snapshot": true,
+  "snapshot_note": "Historical 0.1.0 evidence; current entrypoint and manifest are authoritative."
+}

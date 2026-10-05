@@ -1,0 +1,67 @@
+{
+  "ok": true,
+  "errors": [],
+  "themes": 3,
+  "decks": [
+    {
+      "style": "playful",
+      "ok": true,
+      "kind": "static",
+      "slides": 6,
+      "titles": [
+        "让每个人都有话可说",
+        "先写，再说",
+        "数字记录参与，不解释原因",
+        "选择一种低压力的起点",
+        "用 25 分钟跑一次小试验",
+        "下一次，只验证一件事"
+      ],
+      "errors": [],
+      "limitations": [
+        "No visual inspection",
+        "No semantic/source verification"
+      ]
+    },
+    {
+      "style": "commerce-intelligence",
+      "ok": true,
+      "kind": "static",
+      "slides": 6,
+      "titles": [
+        "让每个人都有话可说",
+        "先写，再说",
+        "数字记录参与，不解释原因",
+        "选择一种低压力的起点",
+        "用 25 分钟跑一次小试验",
+        "下一次，只验证一件事"
+      ],
+      "errors": [],
+      "limitations": [
+        "No visual inspection",
+        "No semantic/source verification"
+      ]
+    },
+    {
+      "style": "project-journal",
+      "ok": true,
+      "kind": "static",
+      "slides": 6,
+      "titles": [
+        "让每个人都有话可说",
+        "先写，再说",
+        "数字记录参与，不解释原因",
+        "选择一种低压力的起点",
+        "用 25 分钟跑一次小试验",
+        "下一次，只验证一件事"
+      ],
+      "errors": [],
+      "limitations": [
+        "No visual inspection",
+        "No semantic/source verification"
+      ]
+    }
+  ],
+  "scope": "static package checks only",
+  "historical_snapshot": true,
+  "snapshot_note": "Historical 0.1.0 evidence; current entrypoint and manifest are authoritative."
+}

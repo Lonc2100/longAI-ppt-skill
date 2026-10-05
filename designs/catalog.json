@@ -1,0 +1,5 @@
+[
+  {"id":"playful","name":"趣味立体","use":"分享演讲、轻科普、创意提案","design":"designs/playful/DESIGN.md","css":"designs/playful/theme.css","example":"examples/playful/index.html"},
+  {"id":"commerce-intelligence","name":"商业情报","use":"经营分析、数据解读、策略汇报","design":"designs/commerce-intelligence/DESIGN.md","css":"designs/commerce-intelligence/theme.css","example":"examples/commerce-intelligence/index.html"},
+  {"id":"project-journal","name":"建筑编辑","use":"项目周报、复盘、行动方案","design":"designs/project-journal/DESIGN.md","css":"designs/project-journal/theme.css","example":"examples/reading-circle/index.html"}
+]

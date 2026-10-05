@@ -1,0 +1,41 @@
+{
+  "ok": true,
+  "scope": "Windows local Chrome, offline",
+  "cases": [
+    {
+      "style": "playful",
+      "timestamp_utc": "20261002T161015522670Z",
+      "ok": true,
+      "states": 22,
+      "checks": 108,
+      "browser_version": "154.0.8037.57",
+      "fullscreen_native": true,
+      "errors": [],
+      "geometry": []
+    },
+    {
+      "style": "commerce-intelligence",
+      "timestamp_utc": "20261002T161016035254Z",
+      "ok": true,
+      "states": 22,
+      "checks": 108,
+      "browser_version": "154.0.8037.57",
+      "fullscreen_native": true,
+      "errors": [],
+      "geometry": []
+    },
+    {
+      "style": "project-journal",
+      "timestamp_utc": "20261002T161016635579Z",
+      "ok": true,
+      "states": 22,
+      "checks": 108,
+      "browser_version": "154.0.8037.57",
+      "fullscreen_native": true,
+      "errors": [],
+      "geometry": []
+    }
+  ],
+  "total_pages": 18,
+  "total_states": 66
+}

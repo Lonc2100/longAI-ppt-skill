@@ -1,0 +1,48 @@
+{
+  "status": "synthetic",
+  "topic": "读书会参与方式试验",
+  "sessions": [
+    {
+      "label": "场次 01",
+      "attendees": 24,
+      "speakers": 8
+    },
+    {
+      "label": "场次 02",
+      "attendees": 24,
+      "speakers": 12
+    },
+    {
+      "label": "场次 03",
+      "attendees": 24,
+      "speakers": 15
+    },
+    {
+      "label": "场次 04",
+      "attendees": 24,
+      "speakers": 18
+    }
+  ],
+  "process": [
+    {
+      "label": "独立写",
+      "minutes": 2,
+      "action": "写下一句话或一个问题"
+    },
+    {
+      "label": "两人聊",
+      "minutes": 8,
+      "action": "先让想法有一个听众"
+    },
+    {
+      "label": "全场谈",
+      "minutes": 12,
+      "action": "自愿分享，允许跳过"
+    },
+    {
+      "label": "留反馈",
+      "minutes": 3,
+      "action": "记录感受与未答问题"
+    }
+  ]
+}

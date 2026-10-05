@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "kind": "isolated extraction and local execution",
+  "checks": [
+    {
+      "name": "extracted-package-static",
+      "ok": true
+    },
+    {
+      "name": "init-from-unrelated-working-directory",
+      "ok": true
+    },
+    {
+      "name": "moved-deck-opens-offline",
+      "ok": true
+    },
+    {
+      "name": "moved-deck-plays",
+      "ok": true
+    },
+    {
+      "name": "moved-gallery-images",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "Same Windows host; not independent-user install",
+    "Agent-host automatic discovery not tested"
+  ],
+  "rehearsal_archive_sha256": "28a056b5cec2ce34c151dddb2300ed4d04748986de6afd3443cbb350a5db1a23"
+}

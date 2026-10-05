@@ -1,0 +1,62 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "title-html-escaped",
+      "ok": true
+    },
+    {
+      "name": "nonempty-rejected",
+      "ok": true
+    },
+    {
+      "name": "original-preserved",
+      "ok": true
+    },
+    {
+      "name": "unknown-rejected",
+      "ok": true
+    },
+    {
+      "name": "unknown-no-output",
+      "ok": true
+    },
+    {
+      "name": "starter-not-passed-as-finished",
+      "ok": true
+    },
+    {
+      "name": "data-ratio-recalculated",
+      "ok": true
+    },
+    {
+      "name": "data-chart-recalculated",
+      "ok": true
+    },
+    {
+      "name": "notes-recalculated",
+      "ok": true
+    },
+    {
+      "name": "six-pages-playful",
+      "ok": true
+    },
+    {
+      "name": "six-pages-commerce-intelligence",
+      "ok": true
+    },
+    {
+      "name": "six-pages-project-journal",
+      "ok": true
+    },
+    {
+      "name": "process-total",
+      "ok": true
+    },
+    {
+      "name": "no-runtime-network",
+      "ok": true
+    }
+  ],
+  "scope": "deterministic mechanics and synthetic source update; not model behavior"
+}
