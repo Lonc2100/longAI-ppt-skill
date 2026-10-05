@@ -1,4 +1,4 @@
-# Design Deck Skill
+# longAI-ppt-skill
 
 **把主题、文档或数据做成有设计感的 HTML PPT，在浏览器里直接改字、换图，并导出文字可编辑的 PowerPoint。**
 
@@ -22,7 +22,7 @@
 也可克隆：
 
 ```bash
-git clone https://github.com/Lonc2100/design-deck-skill.git design-deck
+git clone https://github.com/Lonc2100/longAI-ppt-skill.git design-deck
 ```
 
 对支持本地文件读取的助手说：
